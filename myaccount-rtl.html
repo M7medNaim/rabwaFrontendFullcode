@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- favicon.ico -->
+  <link rel="shortcut icon" href="asset/image/logo.png" type="image/x-icon">
+  <!-- aos library -->
+  <link rel="stylesheet" href="asset/css/aos.css">
+  <!-- bootstrap v5.3.3 -->
+  <link rel="stylesheet" href="asset/css/bootstrap.rtl.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- style css -->
+  <link rel="stylesheet" href="asset/css/style.css">
+  <title>ربوة - حسابي</title>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <!-- start header -->
+      <header class="account">
+        <a href="index-rtl.html">
+          <div class="logo">
+            <img src="asset/image/logo.png" alt="image logo">
+            <h3>ربوة</h3>
+          </div>
+        </a>
+        <nav>
+          <a href="index-rtl.html">الرئيسية</a>
+          <a href="home-movies-rtl.html">أفلام</a>
+          <a href="home-tv-show-rtl.html">عرض تلفزيوني</a>
+          <a href="home-series-rtl.html">مغامرة</a>
+          <a href="home-kids-rtl.html">اطفال</a>
+          <a href="home-education-rtl.html">تعليم</a>
+        </nav>
+        <div class="account">
+          <a href="#offcanvasHeader" id="iconSidebar" data-bs-toggle="offcanvas" role="button"
+            aria-controls="offcanvasHeader"><i class="fa-solid fa-bars-staggered"></i></a>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-regular fa-bell"></i>
+          <div class="userImage">
+            <img src="asset/image/userImage.png" alt="user image">
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+        <div class="listAccount">
+          <a href="myaccount-rtl.html"><i class="fa-regular fa-user"></i> حسابي</a><br>
+          <a href="watchlist-rtl.html"><i class="fa-regular fa-bookmark"></i> أفلامي</a><br>
+          <a href="myaccount.html"><i class="fa-solid fa-globe"></i> English</a><br>
+          <a href="sign-in-rtl.html" class="logoutLink"><i class="fa-solid fa-right-from-bracket logoutIcon"></i> تسجيل
+            خروج</a>
+        </div>
+      </header>
+      <!-- end header -->
+      <!-- start section -->
+      <section class="accountSetting" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container mt-2">
+          <div class="row">
+            <div class="col-12">
+              <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="account-settings-tab" data-bs-toggle="pill" href="#account-settings"
+                    role="tab">اعدادات الحساب</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="security-tab" data-bs-toggle="pill" href="#security" role="tab">الامان</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="certifications-tab" data-bs-toggle="pill" href="#certifications"
+                    role="tab">الشهادات</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-12">
+              <div class="tab-content">
+                <div class="tab-pane fade mb-4 show active" id="account-settings" role="tabpanel">
+                  <div class="profile">
+                    <img src="asset/image/Ellipse 11.png" alt="user image">
+                    <div class="text">
+                      <span>عمر اشرف</span>
+                      <p>وظيفة</p>
+                    </div>
+                  </div>
+
+                  <form action="" method="post" class="mt-5">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                          <label for="exampleInputFullname" class="form-label">الاسم بالكامل </label>
+                          <input type="email" placeholder="ادخل الاسم بالكامل" class="form-control"
+                            id="exampleInputFullname" style="direction: rtl;">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">الايميل </label>
+                          <input type="email" placeholder="ادخل ايميلك" class="form-control" id="exampleInputEmail1"
+                            style="direction: rtl;">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="mb-3">
+                          <label for="userPhone" class="form-label">الموبايل </label>
+                          <input type="number" placeholder="ادخل رقم الموبايل" class="form-control" id="userPhone"
+                            style="direction: rtl;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buttons mt-4">
+                      <button type="submit" class="updateData">تحديث</button>
+                      <button type="submit" class="resetData">اعادة</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade mb-4" id="security" role="tabpanel">
+                  <h6>تغيير كلمة المرور</h6>
+                  <form action="" method="post" class="mt-5">
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="mb-3 passwordUser">
+                          <label for="CurrentPassword" class="form-label">كلمة المرور القديمة </label>
+                          <input type="password" placeholder="ادخل كلمة المرور القديمة"
+                            class="form-control newPasswordInput" id="CurrentPassword">
+                          <i class="fa-regular fa-eye togglePassword"></i>
+
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="mb-3 passwordUser">
+                          <label for="NewPassword" class="form-label">كلمة المرور الجديدة </label>
+                          <input type="password" placeholder="ادخل كلمة المرور الجديدة"
+                            class="form-control newPasswordInput" id="NewPassword">
+                          <i class="fa-regular fa-eye togglePassword"></i>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="mb-3 passwordUser">
+                          <label for="ConfirmPassword" class="form-label">تاكيد كلمة المرور </label>
+                          <input type="password" placeholder="ادخل تاكيد كلمة المرور"
+                            class="form-control newPasswordInput" id="ConfirmPassword">
+                          <i class="fa-regular fa-eye togglePassword"></i>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="buttons mt-4">
+                      <button type="submit" class="updateData">تحديث</button>
+                      <button type="submit" class="resetData">اعادة</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade  mb-4" id="certifications" role="tabpanel">
+                  <h5>الشهادات</h5>
+                  <div class="cert-card mt-3 ">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-12 col-lg-4 col-xl-3 text-center mb-3 mb-lg-0">
+                          <img src="asset/image/imgFilm.png" alt="Film Image" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-lg-8 col-xl-9">
+                          <p class="title">تدريب إعلانات جوجل 2021: الربح مع Pay تدريب إعلانات جوجل 2021: الربح
+                            مع باي جوجل</p>
+                          <div class="d-flex align-items-center gap-5 flex-wrap">
+                            <div class="box">
+                              <i class="fa-solid fa-book-bookmark"></i>
+                              <span>الدرس: 6</span>
+                            </div>
+                            <div class="box">
+                              <i class="fa-solid fa-user"></i>
+                              <span>الطالب : 198</span>
+                            </div>
+                            <div class="box">
+                              <i class="fa-solid fa-trophy"></i>
+                              <span>متوسط</span>
+                            </div>
+                          </div>
+                          <div class="progress my-3">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="point">
+                            <span>النقاط : 75/100</span>
+                            <span>الأيام : 56</span>
+                          </div>
+                          <button type="submit" class="btn btn-success">تحميل الشهادة</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cert-card mt-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <img src="asset/image/imgFilms.png" alt="Film Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                          <p class="title">Google Ads Training 2021: Profit with PayGoogle Ads Training 2021: Profit
+                            with PayGoogl</p>
+                          <div class="d-flex align-items-center gap-5 flex-wrap">
+                            <div class="box">
+                              <i class="fa-solid fa-book-bookmark"></i>
+                              <span>Lesson : 6</span>
+                            </div>
+                            <div class="box">
+                              <i class="fa-solid fa-user"></i>
+                              <span>Student : 198</span>
+                            </div>
+                            <div class="box">
+                              <i class="fa-solid fa-trophy"></i>
+                              <span>Average</span>
+                            </div>
+                          </div>
+                          <div class="progress my-3">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="point">
+                            <span>points : 75/100</span>
+                            <span>Days : 56</span>
+                          </div>
+                          <button type="submit" class="btn btn-success">Download Certificate</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cert-card mt-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <img src="asset/image/imageFilm.png" alt="Film Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                          <p class="title">Google Ads Training 2021: Profit with PayGoogle Ads Training 2021: Profit
+                            with PayGoogl</p>
+                          <div class="d-flex align-items-center gap-5 flex-wrap">
+                            <div class="box">
+                              <i class="fa-solid fa-book-bookmark"></i>
+                              <span>Lesson : 6</span>
+                            </div>
+                            <div class="box">
+                              <i class="fa-solid fa-user"></i>
+                              <span>Student : 198</span>
+                            </div>
+                            <div class="box">
+                              <i class="fa-solid fa-trophy"></i>
+                              <span>Average</span>
+                            </div>
+                          </div>
+                          <div class="progress my-3">
+                            <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="75"
+                              aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <div class="point">
+                            <span>points : 75/100</span>
+                            <span>Days : 56</span>
+                          </div>
+                          <button type="submit" class="btn btn-success">Download Certificate</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+      <!-- end section -->
+    </div>
+  </main>
+  <!-- start footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-12 mb-4 mb-md-0">
+          <div class="logo d-flex align-items-center gap-2">
+            <img src="asset/image/logo.png" alt="logo image">
+            <h4 class="">ربوة</h4>
+          </div>
+          <div class="description ps-5">
+            <p>
+              مرحبا، نحن الربوة. تحاول أن تبذل جهداً لتعيين الأشخاص المناسبين لك للحصول على أفضل النتائج.
+              مجرد البصيرة © 2024
+            </p>
+            <p class="text-decoration-underline">(123) 456-7890</p>
+            <p class="text-decoration-underline">ABC@gmail.com</p>
+          </div>
+          <div class="socialMedia ps-5">
+            <a href="#!"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#!"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-0 col-md-1 col-lg-4"></div>
+        <div class="col-lg-2 col-md-2 col-12 ps-5 ps-md-0 mb-4 mb-md-0 listLink">
+          <h5>تصنيفات</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li><a href="home-movies-rtl.html">أفلام</a></li>
+            <li><a href="home-tv-show-rtl.html">عرض تلفزيوني</a></li>
+            <li><a href="home-kids-rtl.html">أطفال</a></li>
+            <li><a href="home-series-rtl.html">مغامرة</a></li>
+            <li><a href="home-movies-rtl.html">رعب</a></li>
+            <li><a href="home-movies-rtl.html">أكشن</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 col-12 ps-5 ps-md-0  mb-4 mb-md-0 listLink">
+          <h5 class="text-uppercase">مساعدة</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li><a href="#!">سياسة الخصوصية</a></li>
+            <li><a href="#!">شرط الخدمة</a></li>
+            <li><a href="#!">تواصل معنا</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+
+
+  <!-- offcanves header -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="asset/image/logo.png" alt="logo image"> ربوة
+      </h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="links">
+        <a href="index-rtl.html">الرئيسية</a>
+        <a href="home-movies-rtl.html">أفلام</a>
+        <a href="home-tv-show-rtl.html">عرض تلفزيوني</a>
+        <a href="home-series-rtl.html">مغامرة</a>
+        <a href="home-kids-rtl.html">أطفال</a>
+        <a href="home-education-rtl.html">تعليمي</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- aos js library -->
+  <script src="asset/js/aos.js"></script>
+  <!-- bootstrap link js -->
+  <script src="asset/js/bootstrap.min.js"></script>
+  <!-- inline js -->
+  <script src="asset/js/index.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const passwordInputs = document.querySelectorAll('input.newPasswordInput');
+      const togglePasswords = document.querySelectorAll('.togglePassword');
+
+      togglePasswords.forEach((togglePassword, index) => {
+        togglePassword.addEventListener('click', () => {
+          const passwordInput = passwordInputs[index];
+          const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+          passwordInput.setAttribute('type', type);
+
+          togglePassword.classList.toggle('fa-eye-slash');
+          togglePassword.classList.toggle('fa-eye');
+        });
+      });
+    });
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- script header list -->
+  <script>
+    let headerList = document.querySelector('.userImage');
+    let listaccount = document.querySelector('.listAccount');
+    headerList.onclick = _ => {
+      listaccount.classList.toggle('show')
+    }
+  </script>
+</body>
+
+</html>
