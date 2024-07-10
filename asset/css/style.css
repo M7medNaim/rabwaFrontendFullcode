@@ -432,8 +432,13 @@ section.accountSetting .container ul.nav {
     margin-bottom: 40px;
 }
 
-section.accountSetting .container ul.nav .nav-link {
-    font-size: 16px;
+html[dir='rtl'] section.accountSetting .container ul.nav .nav-link {
+    font-size: 22px !important;
+    font-weight: 500;
+    color: var(--secundry3);
+}
+html[dir='ltr'] section.accountSetting .container ul.nav .nav-link {
+    font-size: 16px !important;
     font-weight: 500;
     color: var(--secundry3);
 }
